@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PH Tube</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.20/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-white text-black ">
+
+  <header>
+
+    <div class="navbar p-10">
+      <div class="navbar-start">
+        <div class="">
+          <img src="images/logo.png" alt="">
+
+
+        </div>
+      </div>
+      <div class="navbar-center">
+        <a class="btn btn-outline text-xl text-black" id="view" onclick="loadView()">Sort by view</a>
+      </div>
+      <div class="navbar-end">
+        <a class="btn btn-error text-xl text-white">Blog</a>
+      </div>
+    </div>
+    <hr>
+
+
+    <div id="menu-container" class="flex justify-center mt-6 gap-8">
+      <div class="">
+        <a class="btn btn-error text-xl text-white hover:bg-red-500 " id="allButton">All</a>
+      </div>
+      <div class="">
+        <a class="btn btn-active btn-ghost text-xl hover:bg-red-500 hover:text-white" id="musicButton">Music</a>
+      </div>
+      <div class=" ">
+        <a class="btn btn-active btn-ghost text-xl hover:bg-red-500 hover:text-white" id="comedyButton">Comedy</a>
+      </div>
+      <div class="">
+        <a class="btn btn-active btn-ghost text-xl hover:bg-red-500 hover:text-white" id="drawingButton">Drawing</a>
+      </div>
+      
+    </div>
+    
+
+
+    </div>
+
+
+
+
+
+
+  </header>
+
+  <main class="flex items-center justify-center flex-col">
+    <!-- Cards starts from here. -->
+    <div id="card-container"
+      class="grid gap-8 items-center justify-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl: grid-cols-5  ">
+
+    </div>
+  </main>
+
+  <footer>
+
+
+
+  </footer>
+
+  <script src="js/channel.js"></script>
+
+</body>
+
+</html>
